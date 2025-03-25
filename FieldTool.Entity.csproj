@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E246517-65F1-4A5E-B175-EE3FAE6AD835}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FieldTool.Entity</RootNamespace>
+    <AssemblyName>FieldTool.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\FieldTool.Entity.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\QA\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClipBoardUpload.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClipBoardUpload.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contextual.cs" />
+    <Compile Include="EntityCRUDForDI.cs" />
+    <Compile Include="EntityCRUDForAudit.cs" />
+    <Compile Include="IEntityCRUDForDI.cs" />
+    <Compile Include="PocoExtensions\DiAccount.cs" />
+    <Compile Include="PocoExtensions\DiAttachment.cs" />
+    <Compile Include="PocoExtensions\DiElectricHistory.cs" />
+    <Compile Include="PocoExtensions\DiGasHistory.cs" />
+    <Compile Include="PocoExtensions\DiProjectInfo.cs" />
+    <Compile Include="PocoExtensions\BuildingUnitType.cs" />
+    <Compile Include="PocoExtensions\DiContact.cs" />
+    <Compile Include="PocoExtensions\DiAnswer.cs" />
+    <Compile Include="PocoExtensions\DiInkSecureSignatureData.cs" />
+    <Compile Include="PocoExtensions\InkSecureSignatureData.cs" />
+    <Compile Include="PocoExtensions\MultiFamily.cs" />
+    <Compile Include="PocoExtensions\DiRetrofit.cs" />
+    <Compile Include="PocoExtensions\Retrofit.cs" />
+    <Compile Include="PocoExtensions\AuditProject.cs" />
+    <Compile Include="PocoExtensions\BaseEntity.cs" />
+    <Compile Include="PocoExtensions\Building.cs" />
+    <Compile Include="PocoExtensions\BuildingAttachment.cs" />
+    <Compile Include="PocoExtensions\BuildingElectricHistory.cs" />
+    <Compile Include="PocoExtensions\BuildingEquipmentScheduleDuration.cs" />
+    <Compile Include="PocoExtensions\BuildingSpace.cs" />
+    <Compile Include="PocoExtensions\BuildingEquipmentSchedule.cs" />
+    <Compile Include="PocoExtensions\BuildingGasHistory.cs" />
+    <Compile Include="PocoExtensions\BuildingEquipment.cs" />
+    <Compile Include="PocoExtensions\RecommendationOptionEquipment.cs" />
+    <Compile Include="PocoExtensions\RecommendationOption.cs" />
+    <Compile Include="PocoExtensions\Recommendation.cs" />
+    <Compile Include="PocoExtensions\Contact.cs" />
+    <Compile Include="PocoExtensions\Company.cs" />
+    <Compile Include="PocoExtensions\RetrofitEstimate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="EF.Reverse.POCO.Core.ttinclude" />
+    <None Include="EF.Reverse.POCO.ttinclude" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClipBoardUpload.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ClipBoardUpload.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FieldTool.Bsi\FieldTool.Bsi.csproj">
+      <Project>{e83ac916-3350-453b-ac18-d7a0ca994c1c}</Project>
+      <Name>FieldTool.Bsi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FieldTool.Constants\FieldTool.Constants.csproj">
+      <Project>{e7a092af-3df9-45eb-a967-b2a677ce0177}</Project>
+      <Name>FieldTool.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FieldTool.DAL\FieldTool.DAL.csproj">
+      <Project>{82d628fd-f1ca-415f-9e58-89a8dfaac996}</Project>
+      <Name>FieldTool.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
