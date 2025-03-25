@@ -346,23 +346,7 @@ namespace FieldTool.Entity
         // Stored Procedures
     }
 
-    // ************************************************************************
-    // Fake DbSet
-    // Implementing Find:
-    //      The Find method is difficult to implement in a generic fashion. If
-    //      you need to test code that makes use of the Find method it is
-    //      easiest to create a test DbSet for each of the entity types that
-    //      need to support find. You can then write logic to find that
-    //      particular type of entity, as shown below:
-    //      public class FakeBlogDbSet : FakeDbSet<Blog>
-    //      {
-    //          public override Blog Find(params object[] keyValues)
-    //          {
-    //              var id = (int) keyValues.Single();
-    //              return this.SingleOrDefault(b => b.BlogId == id);
-    //          }
-    //      }
-    //      Read more about it here: https://msdn.microsoft.com/en-us/data/dn314431.aspx
+
     [GeneratedCodeAttribute("EF.Reverse.POCO.Generator", "2.15.1.0")]
     public class FakeDbSet<TEntity> : DbSet<TEntity>, IQueryable, IEnumerable<TEntity>, IDbAsyncEnumerable<TEntity>
         where TEntity : class
