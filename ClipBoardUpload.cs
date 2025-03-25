@@ -1,24 +1,4 @@
-﻿
 
-// This file was automatically generated.
-// Do not make changes directly to this file - edit the template instead.
-// 
-// The following connection settings were used to generate this file
-// 
-//     Configuration file:     "FieldTool.UI\App.config"
-//     Connection String Name: "ClipBoardUpload"
-//     Connection String:      "Server=tcp:d27gj4yn74.database.windows.net,1433;Database=fes-dev-cb-lookup;User ID=franklinadmin@d27gj4yn74;password=**zapped**;"
-
-// Database Edition: SQL Azure
-// Database Engine Edition: Azure
-
-// ReSharper disable RedundantUsingDirective
-// ReSharper disable DoNotCallOverridableMethodsInConstructor
-// ReSharper disable InconsistentNaming
-// ReSharper disable PartialTypeWithSinglePart
-// ReSharper disable PartialMethodWithSinglePart
-// ReSharper disable RedundantNameQualifier
-// TargetFrameworkVersion = 4.50
 #pragma warning disable 1591    //  Ignore "Missing XML Comment" warning
 
 using System;
