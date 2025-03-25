@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTool.ClipboardLookup", "FieldTool.ClipboardLookup\FieldTool.ClipboardLookup.csproj", "{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTool.Constants", "FieldTool.Constants\FieldTool.Constants.csproj", "{E7A092AF-3DF9-45EB-A967-B2A677CE0177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTool.Entity", "FieldTool.Entity\FieldTool.Entity.csproj", "{2E246517-65F1-4A5E-B175-EE3FAE6AD835}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTool.DAL", "FieldTool.DAL\FieldTool.DAL.csproj", "{82D628FD-F1CA-415F-9E58-89A8DFAAC996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTool.ClipboardLookup.Tests", "FieldTool.ClipboardLookup.Tests\FieldTool.ClipboardLookup.Tests.csproj", "{21AAB10B-B714-4335-BA46-6DD90E571FE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldTool.Bsi", "FieldTool.Bsi\FieldTool.Bsi.csproj", "{E83AC916-3350-453B-AC18-D7A0CA994C1C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FieldTool.Db", "FieldTool.Db\FieldTool.Db.sqlproj", "{426CA949-A210-4791-A79E-1C7EA0D8BE04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17BA8131-D512-4A1C-8B41-F0405CF6E242}"
+	ProjectSection(SolutionItems) = preProject
+		.tfsignore = .tfsignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7705B0F9-F0BE-4BD2-B3E2-8BCBA83762CD}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QA|Any CPU = QA|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.QA|Any CPU.Build.0 = Release|Any CPU
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{3F3CB5A7-FC3F-42CC-BB8B-780C61542B82}.Test|Any CPU.Build.0 = Test|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.QA|Any CPU.ActiveCfg = Test|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.QA|Any CPU.Build.0 = Test|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{E7A092AF-3DF9-45EB-A967-B2A677CE0177}.Test|Any CPU.Build.0 = Test|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.QA|Any CPU.ActiveCfg = Test|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.QA|Any CPU.Build.0 = Test|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{2E246517-65F1-4A5E-B175-EE3FAE6AD835}.Test|Any CPU.Build.0 = Test|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.QA|Any CPU.ActiveCfg = Test|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.QA|Any CPU.Build.0 = Test|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{82D628FD-F1CA-415F-9E58-89A8DFAAC996}.Test|Any CPU.Build.0 = Test|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.QA|Any CPU.Build.0 = Release|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{21AAB10B-B714-4335-BA46-6DD90E571FE8}.Test|Any CPU.Build.0 = Test|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.QA|Any CPU.Build.0 = Release|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{E83AC916-3350-453B-AC18-D7A0CA994C1C}.Test|Any CPU.Build.0 = Release|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.QA|Any CPU.Build.0 = QA|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.QA|Any CPU.Deploy.0 = QA|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Test|Any CPU.Build.0 = Test|Any CPU
+		{426CA949-A210-4791-A79E-1C7EA0D8BE04}.Test|Any CPU.Deploy.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklinenergy.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FieldTool.Constants\\FieldTool.Constants.csproj
+		SccProjectName1 = FieldTool.Constants
+		SccLocalPath1 = FieldTool.Constants
+		SccProjectUniqueName2 = FieldTool.Entity\\FieldTool.Entity.csproj
+		SccProjectName2 = FieldTool.Entity
+		SccLocalPath2 = FieldTool.Entity
+		SccProjectUniqueName3 = FieldTool.ClipboardLookup\\FieldTool.ClipboardLookup.csproj
+		SccProjectName3 = FieldTool.ClipboardLookup
+		SccLocalPath3 = FieldTool.ClipboardLookup
+		SccProjectUniqueName4 = FieldTool.DAL\\FieldTool.DAL.csproj
+		SccProjectName4 = FieldTool.DAL
+		SccLocalPath4 = FieldTool.DAL
+		SccProjectUniqueName5 = FieldTool.ClipboardLookup.Tests\\FieldTool.ClipboardLookup.Tests.csproj
+		SccProjectName5 = FieldTool.ClipboardLookup.Tests
+		SccLocalPath5 = FieldTool.ClipboardLookup.Tests
+		SccProjectUniqueName6 = FieldTool.Bsi\\FieldTool.Bsi.csproj
+		SccProjectName6 = FieldTool.Bsi
+		SccLocalPath6 = FieldTool.Bsi
+		SccProjectUniqueName7 = FieldTool.Db\\FieldTool.Db.sqlproj
+		SccProjectName7 = FieldTool.Db
+		SccLocalPath7 = FieldTool.Db
+	EndGlobalSection
+EndGlobal
